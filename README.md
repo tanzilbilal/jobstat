@@ -1,26 +1,124 @@
-# jobstat
-JobStat is a job tracking application designed to assist job seekers in managing and tracking their job application process effectively. It provides an intuitive interface for adding, managing, and monitoring job applications with various statuses like pending, interview, and declined.
-![alt text](image.png)
+# JobStat
 
-## Features
+JobStat is a full‑stack job application tracking platform that helps users manage, track, and visualize their job applications efficiently. It provides a clean, responsive interface to monitor application status, view analytics, and stay organized throughout the job‑search process.
 
-- **Job Tracking**: Keep a record of all the jobs you have applied for with details such as position, company, and location.
-![alt text](image-1.png)
-- **Status Updates**: Update the status of your job applications to reflect their current state, such as pending, interview set, or declined.
-![image](https://github.com/neeeraj1999/Jobstat/assets/53390132/c60fbde3-cbf7-4052-88d3-ae33fc619929)
-![image](https://github.com/neeeraj1999/Jobstat/assets/53390132/1cfaa243-8d37-46e4-aeb1-cb4b5455d09c)
-![alt text](image-3.png)
-- **Statistics**: Visualize your job application process with charts that display monthly application statistics.
-![alt text](image-4.png)
-- **Responsive Design**: A user-friendly interface that adapts to different screen sizes for a seamless experience on any device.
-- **Dark Mode**: A dark theme for those who prefer a darker color palette for reduced eye strain and better readability in low-light conditions.
-![alt text](image-6.png)
+---
 
-## Getting Started
+## 🚀 Features
 
-To get started with JobStat, clone the repository and install the dependencies:
+* **Job Tracking** – Add and manage job applications with details like company, role, and location
+* **Status Management** – Update application status (Applied, Interview, Rejected, Offer, etc.)
+* **Analytics Dashboard** – Visualize applications with charts and monthly statistics
+* **Dark Mode** – Optimized UI for low‑light environments
+* **Responsive Design** – Works seamlessly on desktop, tablet, and mobile devices
+
+---
+
+## 🛠 Tech Stack
+
+* **Frontend:** Next.js, React, TypeScript
+* **Backend:** Next.js API Routes
+* **Database:** PostgreSQL (via Prisma ORM)
+* **Styling:** Tailwind CSS
+* **Charts:** Chart.js / Recharts
+* **ORM:** Prisma
+* **Deployment:** Vercel (recommended)
+
+---
+
+## 📂 Project Structure
+
+```
+JobStat/
+├── app/
+├── components/
+├── prisma/
+│   ├── schema.prisma
+│   ├── seed.js
+├── utils/
+├── public/
+├── README.md
+└── package.json
+```
+
+---
+
+## ⚙️ Getting Started
+
+### 1️⃣ Clone the repository
 
 ```bash
-git clone https://github.com/kndesai/jobstat.git
+git clone https://github.com/tanzilbilal/jobstat.git
 cd jobstat
+```
+
+### 2️⃣ Install dependencies
+
+```bash
 npm install
+```
+
+### 3️⃣ Configure environment variables
+
+Create a `.env` file:
+
+```env
+DATABASE_URL=your_database_url
+```
+
+### 4️⃣ Setup database
+
+```bash
+npx prisma generate
+npx prisma migrate dev
+npx prisma db seed
+```
+
+### 5️⃣ Run the application
+
+```bash
+npm run dev
+```
+
+Open `http://localhost:3000` in your browser.
+
+---
+
+## 📸 Screenshots
+
+Below are some screenshots showcasing the main features of JobStat:
+
+* Dashboard view showing tracked job applications
+* Analytics view with monthly statistics
+* Dark mode interface for better readability
+
+> You can add screenshots by placing image files in the root or `public/` folder and referencing them like:
+> `![Dashboard](image-1.png)`
+
+---
+
+## 🎯 Use Case
+
+JobStat is ideal for students and professionals who are actively applying to jobs and want a centralized, visual way to track applications and progress.
+
+---
+
+## 🔮 Future Enhancements
+
+* Authentication (NextAuth)
+* Resume upload per application
+* Email reminders for follow‑ups
+* Advanced analytics & filters
+
+---
+
+## 👤 Author
+
+**Tanzil Bilal Mohammed**
+Master’s in Computer Science
+Aspiring Software Engineer
+
+---
+
+⭐ If you find this project useful, feel free to star the repository!
+
