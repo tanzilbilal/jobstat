@@ -115,8 +115,8 @@ JobStat is ideal for students and professionals who are actively applying to job
 ## 👤 Author
 
 **Tanzil Bilal Mohammed**
-Master’s in Computer Science
-Aspiring Software Engineer
+**Master’s in Computer Science
+**Aspiring Software Engineer
 
 ---
 
